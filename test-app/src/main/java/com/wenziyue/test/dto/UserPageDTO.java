@@ -19,4 +19,14 @@ public class UserPageDTO extends PageRequest {
 
     private String email;
 
+    @Override
+    public String toString() {
+        return "UserPageDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", size='" + getSize() + '\'' +
+                ", current='" + getCurrent() + '\'' +
+                '}';
+    }
 }

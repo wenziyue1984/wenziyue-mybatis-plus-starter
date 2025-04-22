@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec39d92-6ac3-4e89-802f-c212af948f46" name="Changes" comment="自动部署">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/TestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/biz/BizUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/biz/impl/BizUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/dto/UserPageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/po/UserPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7ec39d92-6ac3-4e89-802f-c212af948f46" name="Changes" comment="测试模块">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenziyue/mybatisplus/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wenziyue/mybatisplus/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/dto/UserPageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/dto/UserPageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.test-app [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -62,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.TestApplication.executor": "Run",
+    "Spring Boot.TestApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
@@ -116,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745215515479</updated>
-      <workItem from="1745215516839" duration="9496000" />
+      <workItem from="1745215516839" duration="16877000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -134,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745224814481</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试模块">
+      <option name="closed" value="true" />
+      <created>1745228731838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745228731838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,23 +155,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="自动部署" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动部署" />
+    <MESSAGE value="测试模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试模块" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/biz/impl/BizUserServiceImpl.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-app/src/main/java/com/wenziyue/test/controller/UserController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.baomidou.mybatisplus.core.conditions.segments.MergeSegments" memberName="groupBy" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

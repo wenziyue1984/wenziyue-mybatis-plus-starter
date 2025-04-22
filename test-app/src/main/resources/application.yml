@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   datasource:
@@ -7,3 +7,10 @@ spring:
     username: root
     password: 12345678
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+    map-underscore-to-camel-case: true #驼峰命名
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.wzy.dal.po

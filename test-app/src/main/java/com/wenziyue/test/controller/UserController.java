@@ -4,17 +4,16 @@ import com.wenziyue.mybatisplus.page.PageResult;
 import com.wenziyue.test.dto.UserPageDTO;
 import com.wenziyue.test.biz.BizUserService;
 import com.wenziyue.test.po.UserPO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author wenziyue
  */
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
 
     @Autowired
@@ -27,6 +26,7 @@ public class UserController {
 
     @GetMapping("/page")
     public PageResult<UserPO> listProducts(UserPageDTO dto) {
+        log.info("dto:{}", dto);
         return bizUserService.pageUser(dto);
     }
 }
