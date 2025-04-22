@@ -24,11 +24,11 @@ jobs:
       - name: Display Maven version  # 步骤3：输出当前 Maven 版本
         run: mvn -v  # 显示 Maven 的版本信息和 JAVA_HOME（调试用，可选）
 
-      - name: Deploy only main module to GitHub Packages # 步骤4：执行部署命令
-        run: mvn --file pom.xml clean deploy -pl '!test-app' -s .github/settings.xml -DskipTests --batch-mode # 跳过 test-app，指定只部署主模块
+#      - name: Deploy only main module to GitHub Packages # 步骤4：执行部署命令
+#        run: mvn --file pom.xml clean deploy -pl '!test-app' -s .github/settings.xml -DskipTests --batch-mode # 跳过 test-app，指定只部署主模块
 
-#      - name: Deploy to GitHub Packages
-#        run: mvn clean deploy -s .github/settings.xml -DskipTests --batch-mode
+      - name: Deploy to GitHub Packages
+        run: mvn clean deploy -s .github/settings.xml -DskipTests --batch-mode
         # - clean：清理旧的构建
         # - deploy：部署到 distributionManagement 中定义的仓库（即 GitHub Packages）
         # - -s .github/settings.xml：使用你自定义的 GitHub Actions 专用 Maven 配置文件
