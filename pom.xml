@@ -88,8 +88,8 @@
     <!-- 配置 GitHub Packages 仓库 -->
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
+            <id>github-mybatis-plus</id>
+            <name>github-mybatis-plus</name>
             <url>https://maven.pkg.github.com/wenziyue1984/wenziyue-mybatis-plus-starter</url>
         </repository>
     </distributionManagement>
