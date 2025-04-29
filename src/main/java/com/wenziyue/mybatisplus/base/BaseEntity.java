@@ -17,11 +17,11 @@ import java.time.LocalDateTime;
 public class BaseEntity implements Serializable {
 
 
-    /**
-     * 主键
-     */
-    @TableId(value = "id", type = IdType.INPUT)
-    private Long id;
+//    /**
+//     * 主键
+//     */
+//    @TableId(value = "id", type = IdType.INPUT)
+//    private Long id;
 
     /**
      * 创建时间
