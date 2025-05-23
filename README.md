@@ -20,18 +20,37 @@
 
 ### 1. 引入依赖
 
-确保你的项目支持从 GitHub Packages 拉取依赖，并在 `pom.xml` 中添加：
+首先在settings.xml中添加以下认证信息
+```xml
+<server>
+    <id>wenziyue-mybatis-plus</id>
+    <username>你的GitHub用户名</username>
+    <password>你的GitHub Token（建议只赋予 read:packages 权限）</password>
+</server>
+```
+
+再在 `pom.xml` 中添加 GitHub 仓库地址：
 
 ```xml
+<!-- pom.xml 中添加仓库地址（id 要与上面保持一致） -->
+<repositories>
+    <repository>
+        <id>wenziyue-mybatis-plus</id>
+        <url>https://maven.pkg.github.com/wenziyue1984/wenziyue-mybatis-plus-starter</url>
+    </repository>
+</repositories>
+```
+然后引入依赖：
 
+```xml
 <dependency>
     <groupId>com.wenziyue</groupId>
     <artifactId>wenziyue-mybatis-plus-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0（请使用最新版本）</version>
 </dependency>
 ```
 
-💡 注意：建议在 settings.xml 中配置对应 GitHub 仓库的访问凭证。
+> 💡 注意：你需要在 Maven 的 `settings.xml` 中配置 GitHub Token 授权，才能访问私有或 GitHub Packages 的依赖。
 
 ### 2. 在你的 Service 中使用分页服务
 
