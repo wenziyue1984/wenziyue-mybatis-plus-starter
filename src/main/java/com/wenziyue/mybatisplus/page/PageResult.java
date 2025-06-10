@@ -32,10 +32,8 @@ public class PageResult<T> implements Serializable {
     /**
      * 换个马甲
      *
-     * @param func
-     *            转换器
-     * @param <U>
-     *            新的元素乐星
+     * @param func 转换器
+     * @param <U>  新的元素乐星
      * @return 新的分页结果
      */
     public <U> PageResult<U> map(Function<? super T, ? extends U> func) {
