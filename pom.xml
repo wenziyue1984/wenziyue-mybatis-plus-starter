@@ -107,17 +107,12 @@
     </build>
 
     <!-- 配置 GitHub Packages 仓库 -->
-    <repositories>
+    <distributionManagement>
         <repository>
             <id>github-mybatis-plus</id>
             <name>github-mybatis-plus</name>
             <url>https://maven.pkg.github.com/wenziyue1984/wenziyue-mybatis-plus-starter</url>
         </repository>
-        <repository>
-            <id>github-wenziyue-bom</id>
-            <name>github-wenziyue-bom</name>
-            <url>https://maven.pkg.github.com/wenziyue1984/wenziyue-bom</url>
-        </repository>
-    </repositories>
+    </distributionManagement>
 
 </project>

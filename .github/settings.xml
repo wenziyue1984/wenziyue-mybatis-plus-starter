@@ -10,11 +10,6 @@
             <username>${env.GITHUB_ACTOR}</username>         <!-- 自动注入当前 GitHub 用户名 -->
             <password>${env.GITHUB_TOKEN}</password>         <!-- 自动注入 GITHUB_TOKEN，无需手动配置 -->
         </server>
-        <server>
-            <id>github-wenziyue-bom</id>
-            <username>${env.GITHUB_ACTOR}</username>         <!-- 自动注入当前 GitHub 用户名 -->
-            <password>${env.GITHUB_TOKEN}</password>         <!-- 自动注入 GITHUB_TOKEN，无需手动配置 -->
-        </server>
     </servers>
 
     <!-- 配置使用阿里云和中央仓库的镜像源 -->
